@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.aodmone.sormnilan.app-merged_res-55:/layout_activity_splash.xml.flat",
+        "source": "com.aodmone.sormnilan.app-main-56:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.aodmone.sormnilan.app-merged_res-55:/drawable_logo.png.flat",
+        "source": "com.aodmone.sormnilan.app-main-56:/drawable/logo.png"
+    }
+]

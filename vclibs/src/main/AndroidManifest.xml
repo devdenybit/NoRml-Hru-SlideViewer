@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.microphone" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".AppVC"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="com.sotdogn.bldogkepd.activties.PravacyPolicyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.sotdogn.bldogkepd.activties.MainHomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden|stateHidden" />
+
+        <activity
+            android:name="com.sotdogn.bldogkepd.activties.VideoPlayerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden|stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sotdogn.bldogkepd.unitlity.TestActivity_10"
+            android:screenOrientation="portrait" />
+
+    </application>
+</manifest>
