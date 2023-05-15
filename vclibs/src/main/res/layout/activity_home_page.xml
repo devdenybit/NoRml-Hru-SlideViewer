@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activties.MainHomeActivity">
 
-    <LinearLayout
+   <LinearLayout
         android:id="@+id/lnrsbg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -90,6 +90,7 @@
 
 
                     <RelativeLayout
+                        android:visibility="gone"
                         android:id="@+id/btn_click"
                         android:layout_width="230dp"
                         android:layout_height="60dp"
@@ -115,12 +116,16 @@
                             android:layout_toLeftOf="@+id/image"
                             android:gravity="center"
                             android:text="Server 1 Call"
+                            android:maxLength="19"
+                            android:maxLines="1"
+                            android:textStyle="bold"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:visibility="gone"
                         android:id="@+id/btn_click2"
                         android:layout_width="230dp"
                         android:layout_height="60dp"
@@ -146,10 +151,90 @@
                             android:layout_toLeftOf="@+id/image2"
                             android:gravity="center"
                             android:text="Server 2 Call"
+                            android:maxLength="19"
+                            android:maxLines="1"
+                            android:textStyle="bold"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/_12sdp" />
 
                     </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/btn_click3"
+                        android:layout_width="230dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/border_ten"
+                        android:elevation="5dp">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/on_videos" />
+
+                        <TextView
+                            android:id="@+id/server3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_toLeftOf="@+id/image3"
+                            android:gravity="center"
+                            android:text="Server 3 Call"
+                            android:maxLength="19"
+                            android:maxLines="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/btn_click4"
+                        android:layout_width="230dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/border_ten"
+                        android:elevation="5dp">
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/on_videos" />
+
+                        <TextView
+                            android:id="@+id/server4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_toLeftOf="@+id/image4"
+                            android:gravity="center"
+                            android:text="Server 4 Call"
+                            android:maxLength="19"
+                            android:maxLines="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
                 </LinearLayout>
 
                 <LinearLayout

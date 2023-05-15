@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: E (1)">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/vclibs/libs/base_java.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

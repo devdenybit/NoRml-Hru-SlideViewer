@@ -63,9 +63,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class MainHomeActivity extends AppCompatActivity  {
+public class MainHomeActivity extends AppCompatActivity {
 
-  private List<MoreApp> moreAppList = new ArrayList<>();
+    private List<MoreApp> moreAppList = new ArrayList<>();
 
     public static int counter = 0;
     public static int crandomcounter = 0;
@@ -80,57 +80,476 @@ public class MainHomeActivity extends AppCompatActivity  {
     public static int LP = 0;
     public static SharedPreferences sh;
 
-    GradientDrawable gd1, gd2;
+    GradientDrawable gd1, gd2, gd3, gd4, gd5;
 
     String app_failDatads;
 
 
     private String mColors[] = {
-            "#39add1", // light blue [0]
-            "#3079ab", // dark blue [1]
-            "#c25975", // mauve [2]
-            "#e15258", // red
-            "#f9845b", // orange
-            "#838cc7", // lavender
-            "#7d669e", // purple
-            "#53bbb4", // aqua
-            "#51b46d", // green
-            "#e0ab18", // mustard
-            "#637a91", // dark gray
-            "#f092b0", // pink
-            "#b7c0c7"  // light gray
+            "#ffafbd",
+            "#ffc3a0",
+            "#c25975",
+            "#2193b0",
+            "#6dd5ed",
+            "#cc2b5e",
+            "#7d669e",
+            "#753a88",
+            "#ee9ca7",
+            "#ffdde1",
+            "#42275a",
+            "#734b6d",
+            "#bdc3c7",
+            "#2c3e50",
+            "#de6262",
+            "#ffb88c",
+            "#06beb6",
+            "#48b1bf",
+            "#eb3349",
+            "#f45c43",
+            "#dd5e89",
+            "#f7bb97",
+            "#56ab2f",
+            "#a8e063",
+            "#614385",
+            "#516395",
+            "#eecda3",
+            "#ef629f",
+            "#eacda3",
+            "#d6ae7b",
+            "#02aab0",
+            "#00cdac",
+            "#d66d75",
+            "#e29587",
+            "#000428",
+            "#004e92",
+            "#ddd6f3",
+            "#faaca8",
+            "#7b4397",
+            "#dc2430",
+            "#43cea2",
+            "#185a9d",
+            "#ba5370",
+            "#ffaf7b",
+            "#4ca1af",
+            "#c4e0e5",
+            "#ff5f6d",
+            "#ffc371",
+            "#36d1dc",
+            "#5b86e5",
+            "#c33764",
+            "#1d2671",
+            "#141e30",
+            "#243b55",
+            "#ff7e5f",
+            "#feb47b",
+            "#ed4264",
+            "#ffedbc",
+            "#2b5876",
+            "#4e4376",
+            "#ff9966",
+            "#ff5e62",
+            "#aa076b",
+            "#61045f",
+            "#FE90AF",
+            "#11998E",
+            "#38EF7D",
+            "#FF5F6D",
+            "#FFC371",
+            "#FF512F"
     };
 
     private String mColors2[] = {
-            "#3079ab", //dark blue  [0]
-            "#39add1", // light blue [1]
-            "#e0ab18", // mustard [2]
-            "#637a91", // dark gray
-            "#f092b0", // pink
-            "#b7c0c7",  // light gray
-            "#c25975", // mauve
-            "#51b46d", // green
-            "#e15258", // red
-            "#f9845b", // orange
-            "#838cc7", // lavender
-            "#7d669e", // purple
-            "#53bbb4", // aqua
+            "#f3a183",
+            "#ffd89b",
+            "#19547b",
+            "#3a1c71",
+            "#d76d77",
+            "#ffaf7b",
+            "#4ca1af",
+            "#c4e0e5",
+            "#ff5f6d",
+            "#ffc371",
+            "#36d1dc",
+            "#5b86e5",
+            "#c33764",
+            "#1d2671",
+            "#141e30",
+            "#243b55",
+            "#ff7e5f",
+            "#feb47b",
+            "#ed4264",
+            "#ffedbc",
+            "#2b5876",
+            "#4e4376",
+            "#ff9966",
+            "#ff5e62",
+            "#aa076b",
+            "#61045f",
+            "#FDFCFB",
+            "#E2D1C3",
+            "#667EEA",
+            "#764BA2",
+            "#C2E9FB",
+            "#A1C4FD",
+            "#FCB69F",
+            "#FFECD2",
+            "#537895",
+            "#09203F",
+            "#868F96",
+            "#596164",
+            "#93A5CF",
+            "#E4EfE9",
+            "#C33764",
+            "#1D2671",
+            "#A9F1DF",
+            "#FFBBBB",
+            "#4E65FF",
+            "#92EFFD",
+            "#BFF098",
+            "#6FD6FF",
+            "#FF61D2",
+            "#FE9090",
+            "#D8B5FF",
+            "#1EAE98",
+            "#EA8D8D",
+            "#A890FE",
+            "#C6EA8D",
+            "#FE90AF",
+            "#11998E",
+            "#38EF7D",
+            "#FF5F6D",
+            "#FFC371",
+            "#FF512F"
+    };
+
+
+    private String mColors3[] = {
+            "#ffafbd",
+            "#ffc3a0",
+            "#c25975",
+            "#2193b0",
+            "#6dd5ed",
+            "#cc2b5e",
+            "#7d669e",
+            "#753a88",
+            "#ee9ca7",
+            "#ffdde1",
+            "#42275a",
+            "#734b6d",
+            "#bdc3c7",
+            "#2c3e50",
+            "#de6262",
+            "#ffb88c",
+            "#06beb6",
+            "#48b1bf",
+            "#eb3349",
+            "#f45c43",
+            "#dd5e89",
+            "#f7bb97",
+            "#56ab2f",
+            "#a8e063",
+            "#614385",
+            "#516395",
+            "#eecda3",
+            "#ef629f",
+            "#eacda3",
+            "#d6ae7b",
+            "#02aab0",
+            "#00cdac",
+            "#d66d75",
+            "#e29587",
+    };
+
+
+    private String mColors4[] = {
+            "#ffb88c",
+            "#06beb6",
+            "#48b1bf",
+            "#eb3349",
+            "#f45c43",
+            "#dd5e89",
+            "#f7bb97",
+            "#56ab2f",
+            "#a8e063",
+            "#614385",
+            "#516395",
+            "#eecda3",
+            "#ef629f",
+            "#eacda3",
+            "#d6ae7b",
+            "#02aab0",
+            "#00cdac",
+            "#d66d75",
+            "#e29587",
+            "#000428",
+            "#004e92",
+            "#ddd6f3",
+            "#faaca8",
+            "#7b4397",
+            "#dc2430",
+            "#43cea2",
+            "#185a9d",
+            "#ba5370",
+            "#f4e2d8",
+            "#ff512f",
+            "#dd2476",
+            "#4568dc",
+            "#b06ab3",
+            "#ec6f66",
+            "#f3a183",
+            "#ffd89b",
+            "#19547b",
+            "#3a1c71",
+            "#d76d77",
+            "#ffaf7b",
+            "#4ca1af",
+            "#c4e0e5",
+            "#ff5f6d",
+            "#ffc371",
+            "#36d1dc",
+            "#5b86e5",
+            "#c33764",
+            "#1d2671",
+            "#141e30",
+            "#243b55",
+            "#ff7e5f",
+            "#feb47b",
+            "#ed4264",
+            "#ffedbc",
+            "#2b5876",
+            "#4e4376",
+            "#ff9966",
+            "#ff5e62",
+            "#aa076b",
+            "#61045f",
+            "#FDFCFB",
+            "#E2D1C3",
+            "#667EEA",
+            "#764BA2",
+            "#C2E9FB",
+    };
+
+
+    private String countrylist[] = {
+
+            "Afghanistan",
+            "Albania",
+            "Algeria",
+            "Andorra",
+            "Angola",
+            "Antigua",
+            "Argentina",
+            "Armenia",
+            "Australia",
+            "Austria",
+            "Azerbaijan",
+            "Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus",
+            "Belgium",
+            "Belize",
+            "Benin",
+            "Bhutan",
+            "Bolivia",
+            "Bosnia",
+            "Botswana",
+            "Brazil",
+            "Brunei",
+            "Bulgaria",
+            "Burkina",
+            "Burundi",
+            "Cambodia",
+            "Cameroon",
+            "Canada",
+            "Cape Verde",
+            "Chad",
+            "Chile",
+            "China",
+            "Colombia",
+            "Comoros",
+            "Congo",
+            "Congo",
+            "Croatia",
+            "Cuba",
+            "Cyprus",
+            "Czech",
+            "Denmark",
+            "Djibouti",
+            "Dominica",
+            "Dominican",
+            "East Timor",
+            "Ecuador",
+            "Egypt",
+            "Equatorial",
+            "Eritrea",
+            "Estonia",
+            "Ethiopia",
+            "Fiji",
+            "Finland",
+            "France",
+            "Gabon",
+            "Gambia",
+            "Georgia",
+            "Germany",
+            "Ghana",
+            "Greece",
+            "Grenada",
+            "Guatemala",
+            "Guinea",
+            "Guinea",
+            "Guyana",
+            "Haiti",
+            "Honduras",
+            "Hungary",
+            "Iceland",
+            "India",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Ireland",
+            "Israel",
+            "Italy",
+            "Ivory",
+            "Jamaica",
+            "Japan",
+            "Jordan",
+            "Kazakhstan",
+            "Kenya",
+            "Kiribati",
+            "Korea N",
+            "Korea S",
+            "Kosovo",
+            "Kuwait",
+            "Kyrgyzstan",
+            "Laos",
+            "Latvia",
+            "Lebanon",
+            "Lesotho",
+            "Liberia",
+            "Libya",
+            "Lithuania",
+            "Luxembourg",
+            "Macedonia",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Maldives",
+            "Mali",
+            "Malta",
+            "Marshall",
+            "Mauritania",
+            "Mauritius",
+            "Mexico",
+            "Micronesia",
+            "Moldova",
+            "Monaco",
+            "Mongolia",
+            "Montenegro",
+            "Morocco",
+            "Mozambique",
+            "Myanmar",
+            "Namibia",
+            "Nauru",
+            "Nepal",
+            "Netherlands",
+            "NewZealand",
+            "Nicaragua",
+            "Niger",
+            "Nigeria",
+            "Norway",
+            "Oman",
+            "Pakistan",
+            "Palau",
+            "Panama",
+            "Guinea",
+            "Paraguay",
+            "Peru",
+            "Philippines",
+            "Poland",
+            "Portugal",
+            "Qatar",
+            "Romania",
+            "Russian",
+            "Rwanda",
+            "St Kitts",
+            "St Lucia",
+            "Saint",
+            "Samoa",
+            "San Marino",
+            "Sao Tome",
+            "Saudi Arabia",
+            "Senegal",
+            "Serbia",
+            "Seychelles",
+            "Sierra",
+            "Singapore",
+            "Slovakia",
+            "Slovenia",
+            "Solomon",
+            "Somalia",
+            "S Africa",
+            "S Sudan",
+            "Spain",
+            "Sri Lanka",
+            "Sudan",
+            "Suriname",
+            "Swaziland",
+            "Sweden",
+            "Switzerland",
+            "Syria",
+            "Taiwan",
+            "Tajikistan",
+            "Tanzania",
+            "Thailand",
+            "Togo",
+            "Tonga",
+            "Trinidad",
+            "Tunisia",
+            "Turkey",
+            "Turkmenistan",
+            "Tuvalu",
+            "Uganda",
+            "Ukraine",
+            "UAE",
+            "UK",
+            "US",
+            "Uruguay",
+            "Uzbekistan",
+            "Vanuatu",
+            "Vatican",
+            "Venezuela",
+            "Vietnam",
+            "Yemen",
+            "Zambia",
+            "Zimbabwe"
     };
 
 
     public int[] getGcolors() {
         String color = "";
         String color2 = "";
+        String color3 = "";
+        String color4 = "";
 
         Random randomGenerator = new Random();
         int randomNumber = randomGenerator.nextInt(mColors.length);
+        int randomNumber2 = randomGenerator.nextInt(mColors2.length);
+        int randomNumber3 = randomGenerator.nextInt(mColors3.length);
+        int randomNumber4 = randomGenerator.nextInt(mColors4.length);
 
         color = mColors[randomNumber];
-        color2 = mColors2[randomNumber];
+        color2 = mColors2[randomNumber2];
+        color3 = mColors3[randomNumber3];
+        color4 = mColors4[randomNumber4];
+
         int colorAsInt = Color.parseColor(color);
         int colorAsInt2 = Color.parseColor(color2);
+        int colorAsInt3 = Color.parseColor(color3);
+        int colorAsInt4 = Color.parseColor(color4);
 
-        return new int[]{colorAsInt, colorAsInt2};
+        return new int[]{colorAsInt, colorAsInt2, colorAsInt3, colorAsInt4};
     }
 
     @Override
@@ -138,7 +557,7 @@ public class MainHomeActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        if(app_DeveloperOption_Check_Mode.equalsIgnoreCase("true")){
+        if (app_DeveloperOption_Check_Mode.equalsIgnoreCase("true")) {
             DevModeOptionCheck.getInstance(this).DevMode_Check();
         }
 
@@ -171,30 +590,88 @@ public class MainHomeActivity extends AppCompatActivity  {
                 GradientDrawable.Orientation.TOP_BOTTOM,
                 new int[]{gColors[0], gColors[1]});
         gd1.setCornerRadius(0f);
-        findViewById(R.id.lnrsbg).setBackground(gd1);
 
         int[] gColors2 = getGcolors();
         gd2 = new GradientDrawable(
                 GradientDrawable.Orientation.LEFT_RIGHT,
                 new int[]{gColors2[0], gColors2[1]});
         gd2.setCornerRadius(20f);
-        findViewById(R.id.btn_click).setBackground(gd2);
-        findViewById(R.id.btn_click2).setBackground(gd2);
 
+        int[] gColors3 = getGcolors();
+        gd3 = new GradientDrawable(
+                GradientDrawable.Orientation.RIGHT_LEFT,
+                new int[]{gColors3[0], gColors3[1]});
+        gd3.setCornerRadius(20f);
+
+        int[] gColors4 = getGcolors();
+        gd4 = new GradientDrawable(
+                GradientDrawable.Orientation.BOTTOM_TOP,
+                new int[]{gColors4[0], gColors4[1]});
+        gd4.setCornerRadius(20f);
+
+        int[] gColors5 = getGcolors();
+        gd5 = new GradientDrawable(
+                GradientDrawable.Orientation.TOP_BOTTOM,
+                new int[]{gColors5[0], gColors5[1]});
+        gd5.setCornerRadius(20f);
+
+
+        findViewById(R.id.lnrsbg).setBackground(gd1);
+
+        findViewById(R.id.btn_click).setBackground(gd2);
+        findViewById(R.id.btn_click2).setBackground(gd3);
+        findViewById(R.id.btn_click3).setBackground(gd4);
+        findViewById(R.id.btn_click4).setBackground(gd5);
+
+        String[] array = countrylist;
+        String randomStr = array[new Random().nextInt(array.length)];
+
+        String[] array2 = countrylist;
+        String randomStr2 = array2[new Random().nextInt(array.length)];
+
+        String[] array3 = countrylist;
+        String randomStr3 = array3[new Random().nextInt(array.length)];
+
+        String[] array4 = countrylist;
+        String randomStr4 = array4[new Random().nextInt(array.length)];
 
         final int cmin = 1;
         final int cmax = 5;
         final int radmserver1 = new Random().nextInt((cmax - cmin) + 1) + cmin;
 
-        final int cmin2 = 6;
-        final int cmax2 = 9;
-        final int radmserver2 = new Random().nextInt((cmax2 - cmin2) + 1) + cmin2;
+
+        if (radmserver1 == 1) {
+            findViewById(R.id.btn_click).setVisibility(View.VISIBLE);
+        } else if (radmserver1 == 2) {
+            findViewById(R.id.btn_click).setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_click2).setVisibility(View.VISIBLE);
+
+        } else if (radmserver1 == 3) {
+            findViewById(R.id.btn_click).setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_click2).setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_click3).setVisibility(View.VISIBLE);
+
+        } else if (radmserver1 == 4) {
+            findViewById(R.id.btn_click).setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_click2).setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_click3).setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_click4).setVisibility(View.VISIBLE);
+        } else {
+            findViewById(R.id.btn_click2).setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_click3).setVisibility(View.VISIBLE);
+        }
 
         TextView server1 = findViewById(R.id.server1);
-        server1.setText("Server " + radmserver1);
+        server1.setText(randomStr + " Server");
 
         TextView server2 = findViewById(R.id.server2);
-        server2.setText("Server " + radmserver2);
+        server2.setText(randomStr2 + " Server");
+
+        TextView server3 = findViewById(R.id.server3);
+        server3.setText(randomStr3 + " Server");
+
+        TextView server4 = findViewById(R.id.server4);
+        server4.setText(randomStr4 + " Server");
 
         findViewById(R.id.privacypolicy).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -265,7 +742,6 @@ public class MainHomeActivity extends AppCompatActivity  {
         findViewById(R.id.btn_click).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 MyAdZOne.getInstance(MainHomeActivity.this).showInterstitialAd(MainHomeActivity.this, new MyAdZOne.MyCallback() {
                     public void callbackCall() {
                         Next_Activity();
@@ -277,7 +753,6 @@ public class MainHomeActivity extends AppCompatActivity  {
         findViewById(R.id.btn_click2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 MyAdZOne.getInstance(MainHomeActivity.this).showInterstitialAd(MainHomeActivity.this, new MyAdZOne.MyCallback() {
                     public void callbackCall() {
                         Next_Activity();
@@ -285,6 +760,31 @@ public class MainHomeActivity extends AppCompatActivity  {
                 }, MyAdZOne.app_MainClickCntSwAd);
             }
         });
+
+        findViewById(R.id.btn_click3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyAdZOne.getInstance(MainHomeActivity.this).showInterstitialAd(MainHomeActivity.this, new MyAdZOne.MyCallback() {
+                    public void callbackCall() {
+                        Next_Activity();
+                    }
+                }, MyAdZOne.app_MainClickCntSwAd);
+            }
+        });
+
+
+        findViewById(R.id.btn_click4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyAdZOne.getInstance(MainHomeActivity.this).showInterstitialAd(MainHomeActivity.this, new MyAdZOne.MyCallback() {
+                    public void callbackCall() {
+                        Next_Activity();
+                    }
+                }, MyAdZOne.app_MainClickCntSwAd);
+            }
+        });
+
+
         getListApps();
     }
 
@@ -332,10 +832,10 @@ public class MainHomeActivity extends AppCompatActivity  {
                     startActivity(countrylist);
                     finish();
                 } else {
-                SharedPreferences.Editor Editor = sh.edit();
-                Editor.putInt("counter", counter);
-                Editor.apply();
-                Test_Activity_Lyout(MainHomeActivity.this, LP);
+                    SharedPreferences.Editor Editor = sh.edit();
+                    Editor.putInt("counter", counter);
+                    Editor.apply();
+                    Test_Activity_Lyout(MainHomeActivity.this, LP);
                 }
             }
 

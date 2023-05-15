@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NoRml_Hru_SlideViewer.iml" filepath="$PROJECT_DIR$/.idea/modules/NoRml_Hru_SlideViewer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer.app.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer.vclibs.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NoRml_Hru_SlideViewer_2_1_0.iml" filepath="$PROJECT_DIR$/.idea/modules/NoRml_Hru_SlideViewer_2_1_0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NoRml_Hru_SlideViewer_2_1_0.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vclibs/NoRml_Hru_SlideViewer_2_1_0.vclibs.unitTest.iml" />
     </modules>
   </component>
 </project>

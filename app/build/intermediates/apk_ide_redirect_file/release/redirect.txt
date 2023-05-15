@@ -1,2 +1,0 @@
-#- File Locator -
-listingFile=../../../../../../vpnwirhvidweocall backup/apk and key/release/output-metadata.json
